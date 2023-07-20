@@ -12,11 +12,6 @@ const UserModel = require('../models/User.model');
 
       
 
-UserRouter.get("/", (req,res)=>{
-//console.log('users')
-res.send('users');
-
-})
 
 UserRouter.post('/register',(req,res, next)=>{
 const {name,email,phone,password} = req.body;
